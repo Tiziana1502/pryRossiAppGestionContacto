@@ -72,6 +72,23 @@ namespace pryRossiAppGestionContacto
             txtContacto.Text = "";
             mtbNumero.Text = "";
         }
-                
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            indice = 0;
+            while (indice <5)
+            {
+                if (vecContacto[indice] != null)
+                {
+                    lstDatos.Items.Add(vecContacto[indice] + " | " + vecTelefono[indice]);
+                }
+                indice++;
+            }
+            for (int indice = 0; indice < 5; indice++)
+            {
+                vecContacto[indice] = null;
+                vecTelefono[indice] = null;
+            }
+        }
     }
 }
