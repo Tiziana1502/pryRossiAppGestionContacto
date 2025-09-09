@@ -26,13 +26,13 @@ namespace pryRossiAppGestionContacto
 
         private void mtbNumero_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            if (mtbNumero.Text != "")
+            if (mtbNumero.Text == "")
             {
-                btnAgendar.Enabled = true;
+                btnAgendar.Enabled = false;
             }
             else 
             { 
-                btnAgendar.Enabled = false; 
+                btnAgendar.Enabled = true; 
             }
         }
 
