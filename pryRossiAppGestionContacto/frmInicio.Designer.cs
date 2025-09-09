@@ -46,9 +46,9 @@
             // 
             lblContacto.AutoSize = true;
             lblContacto.Font = new Font("Segoe UI", 12F);
-            lblContacto.Location = new Point(26, 43);
+            lblContacto.Location = new Point(23, 32);
             lblContacto.Name = "lblContacto";
-            lblContacto.Size = new Size(92, 28);
+            lblContacto.Size = new Size(72, 21);
             lblContacto.TabIndex = 0;
             lblContacto.Text = "Contacto";
             // 
@@ -56,10 +56,10 @@
             // 
             lblNumero.AutoSize = true;
             lblNumero.Font = new Font("Segoe UI", 12F);
-            lblNumero.Location = new Point(26, 97);
+            lblNumero.Location = new Point(23, 73);
             lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(84, 28);
-            lblNumero.TabIndex = 1;
+            lblNumero.Size = new Size(68, 21);
+            lblNumero.TabIndex = 2;
             lblNumero.Text = "Número";
             // 
             // btnAgendar
@@ -68,11 +68,10 @@
             btnAgendar.Enabled = false;
             btnAgendar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgendar.ForeColor = SystemColors.ControlLightLight;
-            btnAgendar.Location = new Point(167, 159);
-            btnAgendar.Margin = new Padding(3, 4, 3, 4);
+            btnAgendar.Location = new Point(146, 119);
             btnAgendar.Name = "btnAgendar";
-            btnAgendar.Size = new Size(105, 53);
-            btnAgendar.TabIndex = 2;
+            btnAgendar.Size = new Size(92, 40);
+            btnAgendar.TabIndex = 4;
             btnAgendar.Text = "Agendar";
             btnAgendar.UseVisualStyleBackColor = false;
             btnAgendar.Click += btnAgendar_Click;
@@ -82,11 +81,10 @@
             btnCancelar.BackColor = SystemColors.ActiveCaption;
             btnCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelar.ForeColor = SystemColors.ControlLightLight;
-            btnCancelar.Location = new Point(55, 159);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(48, 119);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(105, 53);
-            btnCancelar.TabIndex = 4;
+            btnCancelar.Size = new Size(92, 40);
+            btnCancelar.TabIndex = 10;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
@@ -94,74 +92,70 @@
             // mtbNumero
             // 
             mtbNumero.Enabled = false;
-            mtbNumero.Location = new Point(138, 104);
-            mtbNumero.Margin = new Padding(3, 4, 3, 4);
+            mtbNumero.Location = new Point(121, 78);
             mtbNumero.Mask = "(999)000-0000";
             mtbNumero.Name = "mtbNumero";
-            mtbNumero.Size = new Size(133, 27);
-            mtbNumero.TabIndex = 1;
+            mtbNumero.Size = new Size(117, 23);
+            mtbNumero.TabIndex = 3;
             mtbNumero.MaskInputRejected += mtbNumero_MaskInputRejected;
             // 
             // txtContacto
             // 
-            txtContacto.Location = new Point(138, 43);
-            txtContacto.Margin = new Padding(3, 4, 3, 4);
+            txtContacto.Location = new Point(121, 32);
             txtContacto.Name = "txtContacto";
-            txtContacto.Size = new Size(133, 27);
-            txtContacto.TabIndex = 0;
+            txtContacto.Size = new Size(117, 23);
+            txtContacto.TabIndex = 1;
             txtContacto.TextChanged += txtContacto_TextChanged;
             // 
             // lstResultado
             // 
             lstResultado.BackColor = SystemColors.ButtonFace;
             lstResultado.FormattingEnabled = true;
-            lstResultado.Location = new Point(7, 248);
-            lstResultado.Margin = new Padding(3, 4, 3, 4);
+            lstResultado.ItemHeight = 15;
+            lstResultado.Location = new Point(6, 186);
             lstResultado.Name = "lstResultado";
-            lstResultado.Size = new Size(265, 84);
-            lstResultado.TabIndex = 3;
+            lstResultado.Size = new Size(232, 64);
+            lstResultado.TabIndex = 5;
             // 
             // lblCantContacto
             // 
             lblCantContacto.AutoSize = true;
-            lblCantContacto.Location = new Point(14, 352);
+            lblCantContacto.Location = new Point(12, 264);
             lblCantContacto.Name = "lblCantContacto";
-            lblCantContacto.Size = new Size(106, 20);
-            lblCantContacto.TabIndex = 5;
+            lblCantContacto.Size = new Size(87, 15);
+            lblCantContacto.TabIndex = 6;
             lblCantContacto.Text = "Cant Contacto:";
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(23, 395);
+            lblFecha.Location = new Point(20, 296);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(98, 20);
-            lblFecha.TabIndex = 6;
+            lblFecha.Size = new Size(79, 15);
+            lblFecha.TabIndex = 8;
             lblFecha.Text = "Fecha y Hora:";
             // 
             // mtbContacto
             // 
-            mtbContacto.Location = new Point(127, 349);
-            mtbContacto.Margin = new Padding(3, 4, 3, 4);
+            mtbContacto.Location = new Point(111, 262);
             mtbContacto.Name = "mtbContacto";
-            mtbContacto.Size = new Size(115, 27);
+            mtbContacto.Size = new Size(101, 23);
             mtbContacto.TabIndex = 7;
             // 
             // mtbFecha
             // 
-            mtbFecha.Location = new Point(127, 395);
-            mtbFecha.Margin = new Padding(3, 4, 3, 4);
+            mtbFecha.Location = new Point(111, 296);
             mtbFecha.Mask = "00/00/0000 00:00";
             mtbFecha.Name = "mtbFecha";
-            mtbFecha.Size = new Size(115, 27);
-            mtbFecha.TabIndex = 8;
+            mtbFecha.Size = new Size(101, 23);
+            mtbFecha.TabIndex = 9;
             mtbFecha.ValidatingType = typeof(DateTime);
             // 
             // frmInicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(370, 439);
+            ClientSize = new Size(324, 329);
             Controls.Add(mtbFecha);
             Controls.Add(mtbContacto);
             Controls.Add(lblFecha);
@@ -174,7 +168,6 @@
             Controls.Add(lblNumero);
             Controls.Add(lblContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "frmInicio";
             Text = "AGENDA CONTACTO";
             ResumeLayout(false);
