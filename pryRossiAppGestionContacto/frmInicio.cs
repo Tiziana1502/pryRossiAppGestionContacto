@@ -13,6 +13,8 @@ namespace pryRossiAppGestionContacto
         int vContador = 0;
         DateTime vFecha = DateTime.Now;
         int indice = 0;
+
+        //VECTORES
         string[] vecTelefono = new string[5];
         string[] vecContacto = new string[5];
 
@@ -35,9 +37,9 @@ namespace pryRossiAppGestionContacto
             {
                 btnAgendar.Enabled = false;
             }
-            else 
-            { 
-                btnAgendar.Enabled = true; 
+            else
+            {
+                btnAgendar.Enabled = true;
             }
         }
 
@@ -51,15 +53,18 @@ namespace pryRossiAppGestionContacto
             lstResultado.Items.Add("Contacto: " + vContacto
                 + " Número:" + vNumero);
 
-           
+
             //Mostrar resultados usando un contador que acumula
             vContador = vContador + 1;
-            mtbContacto.Text =Convert.ToString(vContador);
-            mtbFecha.Text = Convert.ToString (vFecha);
+            mtbContacto.Text = Convert.ToString(vContador);
+            mtbFecha.Text = Convert.ToString(vFecha);
 
             //limpiar controles
             txtContacto.Text = "";
             mtbNumero.Text = "";
+
+            indice++;
+            txtContacto.Focus();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -67,5 +72,6 @@ namespace pryRossiAppGestionContacto
             txtContacto.Text = "";
             mtbNumero.Text = "";
         }
+                
     }
 }

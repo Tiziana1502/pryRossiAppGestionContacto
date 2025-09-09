@@ -68,7 +68,7 @@
             btnAgendar.Enabled = false;
             btnAgendar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgendar.ForeColor = SystemColors.ControlLightLight;
-            btnAgendar.Location = new Point(146, 119);
+            btnAgendar.Location = new Point(132, 129);
             btnAgendar.Name = "btnAgendar";
             btnAgendar.Size = new Size(92, 40);
             btnAgendar.TabIndex = 4;
@@ -81,7 +81,7 @@
             btnCancelar.BackColor = SystemColors.ActiveCaption;
             btnCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelar.ForeColor = SystemColors.ControlLightLight;
-            btnCancelar.Location = new Point(48, 119);
+            btnCancelar.Location = new Point(34, 129);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(92, 40);
             btnCancelar.TabIndex = 10;
@@ -155,7 +155,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(324, 329);
+            ClientSize = new Size(270, 329);
             Controls.Add(mtbFecha);
             Controls.Add(mtbContacto);
             Controls.Add(lblFecha);
