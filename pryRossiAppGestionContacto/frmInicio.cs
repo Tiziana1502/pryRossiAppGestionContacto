@@ -6,6 +6,12 @@ namespace pryRossiAppGestionContacto
         {
             InitializeComponent();
         }
+        //Definición de variables globales
+        string vContacto = "";
+        string vNumero = "";
+        int vContador = 0;
+        DateTime vFecha = DateTime.Now;
+
         private void txtContacto_TextChanged(object sender, EventArgs e)
         {
             if (txtContacto.Text != "")
@@ -24,14 +30,11 @@ namespace pryRossiAppGestionContacto
             {
                 btnAgendar.Enabled = true;
             }
-            else
-            {
-                btnAgendar.Enabled = false;
+            else 
+            { 
+                btnAgendar.Enabled = false; 
             }
         }
-
-        string vContacto = "";
-        string vNumero = "";
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
@@ -44,17 +47,17 @@ namespace pryRossiAppGestionContacto
             //limpiar controles
             txtContacto.Text = "";
             mtbNumero.Text = "";
+
+            //Mostrar resultados usando un contador que acumula
+            vContador = vContador + 1;
+            mtbContacto.Text = ("Cantidad de Contactos" + vContador);
+            mtbFecha.Text = ("Fecha y Hora" + vFecha);
         }
 
-        int vContador = 0;
-
-        private void mtbContacto_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (txtContacto.Text != "")
-            {
-                vContador = vContador + 1;          
-                mtbContacto.Text = vContador;
-            }
+            txtContacto.Text = "";
+            mtbNumero.Text = "";
         }
     }
 }
