@@ -76,7 +76,7 @@ namespace pryRossiAppGestionContacto
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             indice = 0;
-            while (indice <5)
+            while (indice < 5)
             {
                 if (vecContacto[indice] != null)
                 {
@@ -90,5 +90,6 @@ namespace pryRossiAppGestionContacto
                 vecTelefono[indice] = null;
             }
         }
+      
     }
 }
